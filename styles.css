@@ -23,8 +23,8 @@ background-color:white;
 
 main {
 background-color:#f9f9eb;
-width:50%;
-margin:auto;
+width:67%;
+margin-left:23%;
 padding-left:50px;
 padding-right:50px;
 padding-top:30px;
@@ -47,11 +47,17 @@ position:fixed;
 list-style-type:circle;
 
 box-shadow:0px 0px 5px 3px 	#e6e6e6 inset;
+
+overflow:scroll;
 }
 
 nav li {
 margin:20px;
 margin-bottom:35px;
+}
+
+nav li:last-of-type {
+margin-bottom:0px;
 }
 
 nav li a {
@@ -89,4 +95,19 @@ color:grey;
 
 footer {
 text-align:center;
+}
+
+@media screen and (max-width:480px) {
+nav ul {
+display:none;
+}
+
+main {
+margin:auto;
+width:420px;
+padding-left:5px;
+padding-right:5px;
+padding-top:2px;
+}
+
 }
